@@ -4,7 +4,6 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
-import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import kotlinx.android.synthetic.main.activity_landing_page.*
@@ -26,7 +25,7 @@ class LandingPage : AppCompatActivity() {
     override fun onContextItemSelected(item: MenuItem?): Boolean {
 
         if (item?.itemId == 1001) {
-            var myIntent = Intent(this, MainActivity::class.java)
+            var myIntent = Intent(this, MainActivity_Add::class.java)
             startActivity(myIntent)
         }
 
